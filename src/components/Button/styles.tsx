@@ -1,11 +1,11 @@
 import { ViewStyle, ImageStyle, TextStyle} from 'react-native';
 
-interface Styles {
+interface IStyles {
   button: (color: string) => ViewStyle;
   textButton:(color: string) => TextStyle
 }
 
-const styles: Styles = {
+const styles: IStyles = {
   button: (color: string) => ({
     height: 90,
     width: 90,  
