@@ -159,7 +159,7 @@ const Calculator: React.FC = () => {
       <StatusBar style="auto" />
       <View style={styles.sectionContainer}>
         {dados.map(item => (
-          <View style={styles.boxContainer}>
+          <View key={item.id} style={styles.boxContainer}>
             <Button
               icon={item.icon}
               content={item.content}

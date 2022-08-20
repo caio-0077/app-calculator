@@ -1,10 +1,14 @@
-import { StyleSheet } from 'react-native';
+import { ViewStyle, ImageStyle, TextStyle} from 'react-native';
 
+interface Styles {
+  button: (color: string) => ViewStyle;
+  textButton:(color: string) => TextStyle
+}
 
-const styles = StyleSheet.create({
+const styles: Styles = {
   button: (color: string) => ({
     height: 90,
-    width: 90,
+    width: 90,  
     marginHorizontal: 5,
     marginVertical: 6,
     backgroundColor: color,
@@ -16,6 +20,6 @@ const styles = StyleSheet.create({
     fontSize: 45,
     color: colorText,
   }),
-});
+}
 
 export { styles }

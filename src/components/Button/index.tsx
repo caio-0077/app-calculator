@@ -7,7 +7,7 @@ export type Props = {
   content: string;
   colorText: string;
   color: string;
-  icon: boolean;
+  icon?: boolean;
 };
 
 const Button: React.FC<Props> = ({ content, colorText, color, icon = false }) => {
@@ -19,7 +19,7 @@ const Button: React.FC<Props> = ({ content, colorText, color, icon = false }) =>
       }
       {icon &&
         <View>
-          {content}
+          <Text>{content}</Text>
         </View>
       }
     </TouchableOpacity>
