@@ -1,25 +1,34 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { colors } from '../../components/Colors';
 
 const styles = StyleSheet.create({
-  container: {
+  content: {
     flex: 1,
-    backgroundColor: colors.black,
-    alignItems: 'flex-end',
     justifyContent: 'flex-end',
+    backgroundColor: colors.black,
   },
-  buttons: {
+  contentInput: {
+    margin: 12,
   },
-  sectionContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    alignItems: 'flex-end',
+  input: {
+    width: "100%",
+    textAlign: 'right',
+    fontSize: 100,
+    fontWeight: '300',
+    color: colors.white,
   },
-  boxContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
+  contentResult: {
+    width: "100%",
+    alignItems: 'flex-end'
   },
+  textResult: {
+    fontSize: 55,
+    color: colors.white,
+    fontWeight: '300',
+  },
+  contentFlatList: {
+    margin: 12,
+  }
 });
 
 export { styles }
